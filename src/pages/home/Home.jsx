@@ -6,6 +6,7 @@ const Home = () => {
     const location = useLocation();
     console.log(location);
     useEffect (()=>{
+        console.log('here');
         const sendVerifyReq = async() =>{
             const resp = await fetch(`https://fir-authentication-e63f1.firebaseapp.com/__/auth/action${location.search}`)
         }
